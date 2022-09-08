@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="ico.ico" type = "image/x-icon">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="main.js"></script>
+<title>IL Coder's Softwares</title>
+</head>
+<body>
+
+<div class="sticky">
+<div class="navbar">
+  <img src="ico.ico">
+  <a href="/">IL Coder's Softwares</a>
+</div>
+
+<div class="back" onclick="javascript:go_back();"><</div>
+<div class="viewcart" onclick="javascript:show_cart();" title="Click to View Cart">View Cart</div>
+<div class="viewcart1" onclick="javascript:show_cart();" title="Click to View Cart">View<br> Cart </div>
+</div> <!--- sticky ends here-->
+
+<div class="flex-container">
+  <div class="box1" id="box1">
+<!--- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
+	
+<!--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+	
+<!--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->	
+	<div class="cart">
+		<div class="h2c">YOUR CART</div>
+		<div id="ctab">
+		</div>
+		<div class="links" id="link">
+		<input type="button" onclick="javascript:get_links();" value="Get Links" class="getbtn">
+		</div>
+	</div>
+<!--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+  </div>
+</div>
+
+<div style="text-align: center; padding: 20px; font-size: 20px; font-weight: bolder;"> <a href='https://forms.gle/1RnfzVNiHxptw5Aq8' target='_blank'>Feedback Form</a></div>
+
+
+<script>
+	window.onload = function()
+	{
+		loadItems();
+		if(location.hash!="" && location.hash!="#0")
+		{
+			var str = location.hash;
+			str = str.slice(1);
+			show(Number(str));
+		}
+	}
+</script>
+
+</body>
+</html>
